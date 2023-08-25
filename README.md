@@ -12,9 +12,10 @@ pippy -e {package name}
 ```
 
 ## Windows
+add `.PY` to `PATHEXT`
+
+add pippy directory to `PATH`
 ```
 assoc .py=Python.File
 ftype Python.File=c:\path to \python.exe "%1" %*
 ```
-
-add pippy directory to `PATH`
