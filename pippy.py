@@ -22,7 +22,6 @@ def main(argv=None) -> int:
     parser.add_argument('name')
     parser.add_argument('-e', '--editable', action='store_true')
     args = parser.parse_args()
-    print(args)
     path = Path('.')
     prev = path
 
@@ -47,11 +46,10 @@ def main(argv=None) -> int:
         subprocess.run(['pip', 'install', pkg_path])
     
         
-    
     # delete files after install
     _remove_unwanted(pkg_path)
     return 0
 
 
 if __name__ == '__main__':
-    exit(main())
+    raise SystemExit(main())
