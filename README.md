@@ -2,7 +2,6 @@ Personal utility for pip installing local packages where the package exists
 in any parent directory.
 
 ## Usage
-make pippy.py run without entering `python`/`python3` and `.py` extension
 ```
 pippy {package name}
 ```
@@ -10,8 +9,9 @@ editable install
 ```
 pippy -e {package name}
 ```
-
-## Windows
+## Setup
+make pippy.py run without entering `python`/`python3` and `.py` extension
+### Windows
 add `.PY` to `PATHEXT`
 
 add pippy directory to `PATH`
